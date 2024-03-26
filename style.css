@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+html, body{
+    height: 100%;
+    width: 100%;
+}
+/* #main{
+    height: 100%;
+    width:100%
+} */
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color:#EFEAE3;
+    position:  relative;
+    padding: 0 2vw;
+}
+nav{
+    /* height: 100px; */
+    padding: 2vw 3vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img:hover{
+    
+    /* transition: width 2s ; */
+    /* transition: ease-out 2s  ; */
+    
+}
+nav img{
+    /* background-color: aquamarine; */
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    /* justify-content: space-between; */    
+}   
+.nav-list h4{
+    padding: 10px 20px;
+    border: 1px solid #0e0e0e4d;
+    border-radius: 50px;
+    transition: all ease 0.4s;
+    font-weight: 500;
+    position: relative;
+    color: rgba(0, 0, 0, 0.822);
+    font-size: 18px;
+    overflow: hidden;
+}
+.nav-list h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    /* top: 0; */
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}   
+.nav-list h4:hover::after{
+    bottom:0%;
+    border-radius: 0;
+    /* height: 100%;
+    width: 100%; */
+}
+.nav-list h4 a{
+    color: #000000bb;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+.nav-list h4:hover a{
+    color: #EFEAE3;
+} 
+.center{
+    height: 65vh;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(122, 122, 122);
+    padding-bottom: 2.5vw;
+}
+.left h3{
+     width: 25vw;
+     font-size: 1.8vw;
+     font-family: "Bebas Neue";
+     line-height: 2vw;
+}
+.center h1{
+    font-size:  9vw;
+    text-align: end ;
+    line-height:9vw ;
+}
+#page1 video{
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 4vw;
+}
